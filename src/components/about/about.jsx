@@ -1,8 +1,8 @@
-import React from 'react'
-import "./about.css";
+import React from 'react';
+import './about.css';
 import Me from '../../assets/me-about.webp';
-import {BsAward} from 'react-icons/bs';
-import {AiOutlineFolderOpen} from 'react-icons/ai';
+import { BsAward } from 'react-icons/bs';
+import { AiOutlineFolderOpen } from 'react-icons/ai';
 
 const About = () => {
   return (
@@ -11,10 +11,9 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className='container about__container'>
-        
         <div className='about__me'>
           <div className='about__me-image'>
-            <img src= {Me} alt='about' />
+            <img src={Me} alt='about' />
           </div>
         </div>
 
@@ -23,7 +22,7 @@ const About = () => {
             <article className='about__card'>
               <BsAward className='about__icon' />
               <h5>Experience</h5>
-              <small>Fresher</small>
+              <small>Senior</small>
             </article>
 
             <article className='about__card'>
@@ -33,20 +32,24 @@ const About = () => {
             </article>
           </div>
           <p>
-          I am looking for a Job to build my carrier in software industry. I am a student of Information Technology and a keen learner to the subject. 
-          I have hands on experience in Cascading Style Sheets:CSS, C/C++ Programming Language, JavaScript. 
-          Also know basics of database and server handling.
-          And I will give my best performance wherever I will endeavour.
+            Accomplished Senior Software Developer with over 8 years of
+            experience in designing, developing, and implementing
+            high-performance web applications and services. Passionate about
+            delivering innovative solutions and optimizing performance while
+            embracing continuous learning and professional growth. Adept at
+            collaborating with cross-functional teams to deliver high-quality,
+            scalable software solutions that meet business needs. Committed to
+            excellence, with a strong focus on user experience, agile
+            development, and cutting-edge technologies.
           </p>
 
-          <a href='#contact' className='btn btn-primary'>Contact Me</a>
-
+          <a href='#contact' className='btn btn-primary'>
+            Contact Me
+          </a>
         </div>
-
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
