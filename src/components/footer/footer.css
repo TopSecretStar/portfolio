@@ -1,67 +1,100 @@
-footer {
-    background: var(--color-primary);
-    padding: 3rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 7rem;
-}
-
-footer a {
-    color: var(--color-bg);
+@keyframes textFade {
+  0%,
+  100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
 }
 
 .footer__logo {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    display: inline-block;
+  animation: textFade 5s ease infinite;
+  background-image: linear-gradient(to right, #4fd1c5, #805ad5, #f6ad55);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+footer {
+  background: var(--color-primary);
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+}
+
+footer a {
+  color: var(--color-bg);
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
 }
 
 .permalinks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 2rem;
 }
 
 .footer__socials {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .footer__socials a {
-    background: var(--color-bg);
-    color: var(--color-white);
-    padding: 0.8rem;
-    border-radius: 0.7rem;
-    display: flex;
-    border: 1px solid transparent;
+  background: var(--color-bg);
+  color: var(--color-white);
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px var(--color-bg-variant);
 }
 
 .footer__socials a:hover {
-    background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
+  box-shadow: 0 0 20px var(--color-bg-variant);
 }
 
 .footer__copyright {
-    margin-bottom: 4rem;
-    color: var(--color-bg);
+  margin-bottom: 4rem;
+  color: var(--color-bg);
 }
 
-
-/* ------ MEDIA Queries (Mobile/Small Devices) ------ */
-
 @media screen and (max-width: 600px) {
-    .permalinks {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-    .footer__socials {
-        margin-bottom: 2.6rem;
-    }
+  .footer__socials {
+    margin-bottom: 2.6rem;
+  }
+}
+
+.footer__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerlogo {
+  width: 150px;
+  height: 150px;
 }

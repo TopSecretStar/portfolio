@@ -1,14 +1,8 @@
 import React from 'react';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { AiOutlineMail, AiOutlineMobile } from 'react-icons/ai';
 import './contact.css';
-import { AiOutlineMail } from 'react-icons/ai';
-import {
-  RiMessengerLine,
-  RiTelegramFill,
-  RiTelegramLine,
-} from 'react-icons/ri';
-import { AiOutlineWhatsApp } from 'react-icons/ai';
 
 const Contact = () => {
   const form = useRef();
@@ -17,11 +11,15 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_8o9mq19',
-      'template_ni2e0qm',
+      'service_ca3r1n1',
+      'template_dqwwxn7',
       form.current,
-      'Udv0L8VcHA4-qFbVn'
-    );
+      '1dgwWAYGYhlcNNCsG'
+    ).then((res) => {
+      if (res.status === 200) {
+        
+      }
+    });
     e.target.reset();
   };
 
@@ -46,20 +44,7 @@ const Contact = () => {
           </article>
 
           <article className='contact__option'>
-            <RiTelegramLine className='contact__option-icon' />
-            <h4>Telegram</h4>
-            <h5>Gerson Stuva</h5>
-            <a
-              href='https://t.me/secret_star_bright'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Send a Message
-            </a>
-          </article>
-
-          <article className='contact__option'>
-            <AiOutlineWhatsApp className='contact__option-icon' />
+            <AiOutlineMobile className='contact__option-icon' />
             <h4>Phone Number</h4>
             <h5>(505) 514-0004</h5>
             <a href='tel:+15055140004' target='_blank' rel='noreferrer'>

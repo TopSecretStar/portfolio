@@ -1,182 +1,113 @@
-export const frontend = [
-  {
-    label: 'HTML5',
+export const skills = {
+  frontend: {
+    title: 'Frontend',
+    skills: [
+      'React.js',
+      'React Native',
+      'Next.js',
+      'Vue.js',
+      'Nuxt.js',
+      'Angular',
+      'Ionic Framework',
+      'Flutter',
+      'HTML5',
+      'CSS3',
+      'Sass',
+      'JavaScript (ES6+)',
+      'TypeScript',
+      'Tailwind CSS',
+      'Redux, NgRx, Vuex',
+    ],
   },
-  {
-    label: 'CSS3',
-  },
-  {
-    label: 'JavaScript',
-  },
-  {
-    label: 'TypeScript',
-  },
-  {
-    label: 'React',
-  },
-  {
-    label: 'Next.js',
-  },
-  {
-    label: 'Angular 2+',
-  },
-  {
-    label: 'Vue.js',
-  },
-  {
-    label: 'Nuxt.js',
-  },
-  {
-    label: 'Svelte',
-  },
-  {
-    label: 'Electron',
-  },
-  {
-    label: 'SCSS',
-  },
-  {
-    label: 'LESS',
-  },
-  {
-    label: 'Redux',
-  },
-  {
-    label: 'Bootstrap',
-  },
-  {
-    label: 'Tailwind CSS',
-  },
-  {
-    label: 'Chakra UI',
-  },
-  {
-    label: 'Mateiral UI',
-  },
-  {
-    label: 'Ant Design',
-  },
-  {
-    label: 'RESTful API',
-  },
-];
 
-export const backend = [
-  {
-    label: 'Node.js',
+  backend: {
+    title: 'Backend',
+    skills: [
+      'Node.js',
+      'Express',
+      'NestJs',
+      'PHP',
+      'Laravel',
+      'Symfony',
+      'C#',
+      '.NET',
+      'ASP.NET Core',
+      'Java',
+      'Spring Boot',
+      'Python',
+      'Django',
+      'RESTful APIs',
+      'GraphQL',
+      'Entity Framework',
+      'Dapper',
+      'Wordpress',
+    ],
   },
-  {
-    label: 'Express.js',
-  },
-  {
-    label: 'Nest.js',
-  },
-  {
-    label: 'PHP',
-  },
-  {
-    label: 'Laravel',
-  },
-  {
-    label: 'Symfony',
-  },
-  {
-    label: 'Python',
-  },
-  {
-    label: 'Django',
-  },
-  {
-    label: 'Flask',
-  },
-  {
-    label: 'FastAPI',
-  },
-  {
-    label: 'Wordpress',
-  },
-  {
-    label: 'Java',
-  },
-  {
-    label: 'Spring Frameworks',
-  },
-  {
-    label: 'C#',
-  },
-  {
-    label: '.NET Framework',
-  },
-  {
-    label: 'PostgreSQL',
-  },
-  {
-    label: 'MongoDB',
-  },
-  {
-    label: 'MySQL',
-  },
-];
+  // database: {
+  //   title: 'Database & Blockchain',
+  //   skills: [
+  //     'SQL Server',
+  //     'MySQL',
+  //     'PostgreSQL',
+  //     'MongoDB',
+  //     'Firebase',
+  //     'Supabase',
+  //     'SQLAlchemy',
+  //     'pgAdmin',
+  //     'Solidity',
+  //     'Truffle',
+  //     'Hardhat',
+  //     'Web3.js',
+  //     'Ethers.js',
+  //     'IPFS',
+  //   ],
+  // },
 
-export const others = [
-  {
-    label: 'React Native',
-  },
-  {
-    label: 'Flutter',
-  },
-  {
-    label: 'Ionice',
-  },
-  {
-    label: 'iOS',
-  },
-  {
-    label: 'Android',
-  },
-  {
-    label: 'Swift',
-  },
-  {
-    label: 'Kotlin',
-  },
-  {
-    label: 'Jenkins',
-  },
-  {
-    label: 'Docker',
-  },
-  {
-    label: 'Kubernetes',
-  },
-  {
-    label: 'Git',
-  },
-  {
-    label: 'CI/CD',
-  },
-  {
-    label: 'Cypress',
-  },
-  {
-    label: 'Jasmine',
-  },
-  {
-    label: 'Jest',
-  },
-  {
-    label: 'Selenium',
-  },
-  {
-    label: 'Comcumber',
-  },
-  {
-    label: 'AWS',
-  },
-  {
-    label: 'GCP',
-  },
-  {
-    label: 'Azure',
-  },
-];
+  // devops: {
+  //   title: 'DevOps & Cloud',
+  //   skills: [
+  //     'AWS',
+  //     'GCP',
+  //     'Azure',
+  //     'Docker',
+  //     'Kubernetes',
+  //     'Jenkins',
+  //     'CI/CD',
+  //     'GitLab CI',
+  //     'Azure DevOps',
+  //     'DigitalOcean',
+  //   ],
+  // },
+
+  // testing: {
+  //   title: 'Testing & Debugging',
+  //   skills: [
+  //     'xUnit',
+  //     'Jest',
+  //     'Mocha',
+  //     'NUnit',
+  //     'Cypress',
+  //     'Jasmine',
+  //     'Selenium',
+  //     'Chrome DevTools',
+  //     'Postman',
+  //     'Swagger',
+  //   ],
+  // },
+
+  // VersionControl: {
+  //   title: 'Version Control & SDLC',
+  //   skills: [
+  //     'Git',
+  //     'GitHub',
+  //     'GitLab',
+  //     'Bitbucket',
+  //     'Scrum',
+  //     'SOLID principles',
+  //     'Kanban',
+  //     'Jira',
+  //     'Trello',
+  //     'Confluence',
+  //   ],
+  // },
+};

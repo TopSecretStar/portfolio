@@ -1,22 +1,23 @@
 .services__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
 .service {
-  height: 100%;
   background: var(--color-bg-variant);
   border-radius: 0 0 2rem 2rem;
   border: 1px solid var(--color-primary);
-  /* height: fit-content; */
+  height: fit-content;
   transition: var(--transition);
+  box-shadow: 0 0 10px var(--color-primary);
 }
 
 .service:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
+  box-shadow: 0 0 20px var(--color-primary);
 }
 
 .service__head {
@@ -44,33 +45,28 @@
 
 .service__list-icon {
   color: var(--color-primary);
-  margin-top: 2px;
+  margin: 2px;
+  font-size: 2rem;
 }
 
 .service__list p {
   font-size: 0.9rem;
 }
 
-/* ------ MEDIA Queries (Tabs/Medium Devices) ------ */
-
 @media screen and (max-width: 1024px) {
   .services__container {
-    width: 60%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 
   .service {
-    width: 60%;
+    height: auto;
   }
 }
 
-/* ------ MEDIA Queries (Mobile/Small Devices) ------ */
-
 @media screen and (max-width: 600px) {
   .services__container {
-    width: 60%;
-  }
-
-  .service {
-    width: 60%;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }

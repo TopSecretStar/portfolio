@@ -1,8 +1,7 @@
 import React from 'react';
-import './footer.css';
 import { BsLinkedin } from 'react-icons/bs';
 import { FiGithub } from 'react-icons/fi';
-import { FaInstagram } from 'react-icons/fa';
+import './footer.css';
 
 const Footer = () => {
   return (
@@ -38,9 +37,6 @@ const Footer = () => {
         </a>
         <a href='https://github.com/TopSecretStar'>
           <FiGithub />
-        </a>
-        <a href='https://www.instagram.com/gerson_stuva/'>
-          <FaInstagram />
         </a>
       </div>
 
