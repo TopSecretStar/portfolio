@@ -1,7 +1,11 @@
 import React from 'react';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { AiOutlineMail, AiOutlineMobile } from 'react-icons/ai';
+import {
+  AiOutlineCalendar,
+  AiOutlineMail,
+  AiOutlineMobile,
+} from 'react-icons/ai';
 import './contact.css';
 
 const Contact = () => {
@@ -10,16 +14,17 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      'service_ca3r1n1',
-      'template_dqwwxn7',
-      form.current,
-      '1dgwWAYGYhlcNNCsG'
-    ).then((res) => {
-      if (res.status === 200) {
-        
-      }
-    });
+    emailjs
+      .sendForm(
+        'service_ca3r1n1',
+        'template_dqwwxn7',
+        form.current,
+        '1dgwWAYGYhlcNNCsG'
+      )
+      .then((res) => {
+        if (res.status === 200) {
+        }
+      });
     e.target.reset();
   };
 
@@ -51,13 +56,32 @@ const Contact = () => {
               Call Me
             </a>
           </article>
+
+          <article className='contact__option'>
+            <AiOutlineCalendar className='contact__option-icon' />
+            <h4>Calendly</h4>
+            <h5>Gerson Stuva</h5>
+            <a
+              href='https://calendly.com/gerson-stuva/30min'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Book me
+            </a>
+          </article>
         </div>
         {/*............ Contact Options End ...........*/}
         <form ref={form} onSubmit={sendEmail}>
           <input
             type='text'
-            name='name'
-            placeholder='Your Full Name'
+            name='firstname'
+            placeholder='Your First Name'
+            required
+          />
+          <input
+            type='text'
+            name='lastname'
+            placeholder='Your Last Name'
             required
           />
           <input type='email' name='email' placeholder='Your Email' required />
